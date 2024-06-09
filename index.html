@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Management</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container" id="popupContainer">
+    <div class="pop">
+        <h2>Add New Product</h2>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName">
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice">
+        <button onclick="addProduct()">Add Product</button>
+        <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+</div>
+
+    <div class="products" id="productsContainer">
+    </div>
+    
+    <button class="btn" onclick="showPopup()">Add New Product</button>
+
+
+
+<script src="./index.js"></script>
+</body>
+</html>
+
